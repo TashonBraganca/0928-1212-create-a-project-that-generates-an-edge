@@ -1,0 +1,17 @@
+source,target,relation,weight
+api,cache,reads_from,3
+api,db,reads_from,5
+api,queue,publishes_to,2
+worker,queue,consumes,4
+worker,db,writes_to,5
+worker,cache,reads_from,2
+auth,db,reads_from,4
+auth,api,guards,3
+scheduler,queue,publishes_to,3
+scheduler,worker,triggers,2
+web,api,calls,5
+web,auth,calls,4
+report,db,reads_from,3
+report,cache,reads_from,1
+metrics,api,observes,2
+metrics,worker,observes,2

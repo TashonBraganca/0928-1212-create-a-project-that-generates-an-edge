@@ -1,0 +1,16 @@
+{
+  "name": "service-topology",
+  "nodes": ["web", "api", "auth", "db", "cache", "queue", "worker", "scheduler"],
+  "links": [
+    {"source": "web", "target": "api", "relation": "calls", "weight": 5},
+    {"source": "web", "target": "auth", "relation": "calls", "weight": 4},
+    {"source": "api", "target": "auth", "relation": "verifies_with", "weight": 4},
+    {"source": "api", "target": "db", "relation": "reads_from", "weight": 5},
+    {"source": "api", "target": "cache", "relation": "reads_from", "weight": 3},
+    {"source": "api", "target": "queue", "relation": "publishes_to", "weight": 2},
+    ["worker", "queue", 4, "consumes"],
+    ["worker", "db", 5, "writes_to"],
+    ["scheduler", "queue", 3, "publishes_to"],
+    ["scheduler", "worker", 2, "triggers"]
+  ]
+}

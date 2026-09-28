@@ -1,0 +1,17 @@
+edge_id	source	target	relation	weight	generated_at
+e_ce61b5bd51	api	cache	reads_from	3	2026-09-28T06:48:02Z
+e_335b8ae6e1	api	db	reads_from	5	2026-09-28T06:48:02Z
+e_fe8984d5fb	api	queue	publishes_to	2	2026-09-28T06:48:02Z
+e_c8334a082a	auth	api	guards	3	2026-09-28T06:48:02Z
+e_c81861d6a1	auth	db	reads_from	4	2026-09-28T06:48:02Z
+e_2b85042d4c	metrics	api	observes	2	2026-09-28T06:48:02Z
+e_bf120a7db4	metrics	worker	observes	2	2026-09-28T06:48:02Z
+e_c13c91b673	report	cache	reads_from	1	2026-09-28T06:48:02Z
+e_4accc1b912	report	db	reads_from	3	2026-09-28T06:48:02Z
+e_eff3415d32	scheduler	queue	publishes_to	3	2026-09-28T06:48:02Z
+e_7c14536e25	scheduler	worker	triggers	2	2026-09-28T06:48:02Z
+e_44cbd31d1c	web	api	calls	5	2026-09-28T06:48:02Z
+e_13b4f98ff5	web	auth	calls	4	2026-09-28T06:48:02Z
+e_9b45deab98	worker	cache	reads_from	2	2026-09-28T06:48:02Z
+e_854eb40fd8	worker	db	writes_to	5	2026-09-28T06:48:02Z
+e_66d8e8d96b	worker	queue	consumes	4	2026-09-28T06:48:02Z

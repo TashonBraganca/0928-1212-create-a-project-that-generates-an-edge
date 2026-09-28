@@ -1,0 +1,10 @@
+{
+  "title": "Edge table",
+  "generated_at": "2026-09-28T06:48:02Z",
+  "source": "synthetic(nodes=25, edges=60, seed=1337)",
+  "directed": true,
+  "deduplicated": true,
+  "input_edge_count": 60,
+  "edge_count": 60,
+  "node_count": 25
+}

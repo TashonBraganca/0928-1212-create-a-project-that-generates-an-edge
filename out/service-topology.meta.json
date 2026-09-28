@@ -1,0 +1,10 @@
+{
+  "title": "Edge table",
+  "generated_at": "2026-09-28T06:48:02Z",
+  "source": "examples/service-topology.json",
+  "directed": true,
+  "deduplicated": true,
+  "input_edge_count": 10,
+  "edge_count": 10,
+  "node_count": 8
+}
